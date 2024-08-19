@@ -1,0 +1,1 @@
+export { lastica, ttInterphases, sanOne } from "./font"
