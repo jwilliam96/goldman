@@ -6,7 +6,7 @@ export function Growth() {
 
             {/* TITLE  */}
             <div className="w-11/12 md:w-10/12 bg-fondo-purple relative z-30 rounded-s-full my-4 self-end">
-                <p className="py-4 px-10 text-3xl md:text-4xl lg:text-5xl">CRECIMIENTO PROTEGIDO</p>
+                <p className="py-4 px-10 text-3xl md:text-4xl lg:text-5xl">IMPULSA TU FUTURO</p>
             </div>
 
             <div className="max-w-[1500px] mx-auto px-8 grid md:grid-cols-5  relative z-30 grow items-center justify-items-center my-10 gap-8 md:gap-0" >

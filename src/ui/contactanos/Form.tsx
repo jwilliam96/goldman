@@ -6,9 +6,8 @@ import { useForm } from "react-hook-form"
 interface FormData {
     name: string
     email: string
-    cc: string
     tel: string
-    plans: string
+    plans: "Futuro seguro" | "Impulsa tu futuro" | "Elige un plan"
     call: string
 }
 
@@ -22,16 +21,15 @@ export default function Form() {
         reset({
             name: "",
             call: "",
-            cc: "",
             email: "",
-            plans: "",
+            plans: "Elige un plan",
             tel: ""
         })
 
     }
 
     return (
-        <form onSubmit={handleSubmit(submit)} className=" flex justify-center items-center flex-grow">
+        <form onSubmit={handleSubmit(submit)} className=" flex justify-center items-center flex-grow pt-10">
             <div className="max-w-[950px] grid md:grid-cols-2 gap-8 md:gap-x-16 w-full">
 
                 <div className="flex flex-col gap-2 ">
@@ -58,7 +56,7 @@ export default function Form() {
                             {...register("tel", { required: true })}
                             type="text"
                             className="w-full p-4 rounded-2xl bg-white border-none outline-none text-black"
-                            placeholder="Nombre"
+                            placeholder="# celular ó fijo"
                         />
                     </div>
                     {errors.tel && <p className="text-red-500 text-xl pl-6">* Campo requerido</p>}
@@ -72,26 +70,35 @@ export default function Form() {
                             {...register("email", { required: true })}
                             type="email"
                             className="w-full p-4 rounded-2xl bg-white border-none outline-none text-black"
-                            placeholder="Nombre"
+                            placeholder="cliente@gmail.com"
                         />
                     </div>
                     {errors.email && <p className="text-red-500 text-xl pl-6">* Campo requerido</p>}
                 </div>
 
                 <div className="flex flex-col gap-2 ">
-                    <label htmlFor="plans" className="text-2xl">Plan de contacto</label>
+                    <p className="text-2xl">Plan de contacto</p>
                     <div className="relative p-1 bg-gradient-to-r from-purple-600 to-pink-400 rounded-2xl">
-                        <input
+                        {/* <input
                             id="plans"
                             {...register("plans")}
                             type="text"
                             className="w-full p-4 rounded-2xl bg-white border-none outline-none text-black"
                             placeholder="Nombre"
-                        />
+                        /> */}
+                        <select
+                            name="plan"
+                            id="plan"
+                            className="w-full p-4 rounded-2xl bg-white border-none outline-none text-gray-700 cursor-pointer"
+                        >
+                            <option value="" className="text-gray-400">Elige un plan</option>
+                            <option value="">Futuro seguro</option>
+                            <option value="">Impulsa tu futuro</option>
+                        </select>
                     </div>
                 </div>
 
-                <div className="flex flex-col gap-2 ">
+                {/* <div className="flex flex-col gap-2 ">
                     <label htmlFor="cc" className="text-2xl">N° de Identificación</label>
                     <div className="relative p-1 bg-gradient-to-r from-purple-600 to-pink-400 rounded-2xl">
                         <input
@@ -102,7 +109,7 @@ export default function Form() {
                             placeholder="Nombre"
                         />
                     </div>
-                </div>
+                </div> */}
 
                 <div className="flex flex-col gap-2 ">
                     <label htmlFor="call" className="text-2xl">Horario de llamada</label>
@@ -112,7 +119,7 @@ export default function Form() {
                             {...register("call")}
                             type="text"
                             className="w-full p-4 rounded-2xl bg-white border-none outline-none text-black"
-                            placeholder="Nombre"
+                            placeholder="ejm: 08:00am - 01:00pm"
                         />
                     </div>
                 </div>
