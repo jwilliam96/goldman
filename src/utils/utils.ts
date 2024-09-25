@@ -6,6 +6,13 @@ export const secureFuture = [
     "Protege a tus seres queridos con una cobertura extendida que incluye opciones para cónyuge e hijos, garantizando su bienestar en cualquier circunstancia."
 ]
 
+export const secureFutureDos = [
+    "Rendimiento Garantizado: Disfruta de tasas de interés fijas y atractivas, sin sorpresas. Tu dinero trabaja para ti de manera predecible.",
+    "Seguridad Total: Tu capital está protegido. Invertimos en instrumentos de alta calidad, minimizando el riesgo.",
+    "Flexibilidad: Elige el plazo que mejor se adapte a tus necesidades, desde 3 meses hasta 5 años.",
+    "Sin Comisiones Ocultas: Total transparencia en tus inversiones. Conoce exactamente lo que ganarás al final del plazo."
+]
+
 export const crecimiento = [
     "Disfruta del crecimiento de tu capital sin sacrificar la seguridad, gracias a un plan que protege tu inversión contra las fluctuaciones del mercado",
     "Obtén rendimientos constantes y confiables, con un enfoque en la preservación de tu patrimonio mientras ves crecer tu inversión a lo largo del tiempo.",

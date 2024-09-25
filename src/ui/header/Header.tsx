@@ -18,7 +18,7 @@ export function Header() {
                     </div>
 
                     <div className="flex flex-col gap-5 lg:flex-row items-center md:gap-10">
-                        <Button title="SOBRE NOSOTROS" className="py-2 px-4 text-xl shrink-0 md:text-2xl" href="about" />
+                        <Button title="QUIENES SOMOS" className="py-2 px-4 text-xl shrink-0 md:text-2xl" href="about" />
                         <Button title="CONTÁCTAME" className="py-2 px-4 text-xl md:text-2xl" href="contact" />
                     </div>
 
