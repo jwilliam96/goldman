@@ -1,6 +1,6 @@
 "use server"
 
-export const getSecret = () => {
+export const getSecret = async () => {
     const serviceId = process.env.EMAILJS_SERVICE_ID;
     const templateId = process.env.EMAILJS_TEMPLATE_ID;
     const publicKey = process.env.EMAILJS_PUBLIC_KEY;
