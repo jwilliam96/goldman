@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     description: "Te ayudamos a mejorar tus ingresos por medio de nuestra asesoría de inversion",
     url: "https://www.goldman-mu.shop",
     images: "/image/plansFs.png"
+  },
+  other: {
+    "google-site-verification": "gh6bQOqso5stOcanP6ZzbYHOgPgseNGx0OVUS2mV08k",
   }
 };
 
