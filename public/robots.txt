@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.goldman-mu.shop
+
+# Sitemaps
+Sitemap: https://www.goldman-mu.shop/sitemap.xml
